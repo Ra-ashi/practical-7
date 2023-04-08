@@ -1,0 +1,66 @@
+����<B
+java/lang/Object<init>()V		
+DOMEchoindentI 	basicIndentLjava/lang/String;	outLjava/io/PrintWriter;org/w3c/dom/NodegetNodeName()Ljava/lang/String; makeConcatWithConstants&(Ljava/lang/String;)Ljava/lang/String;
+"#$%&java/io/PrintWriterprint(Ljava/lang/String;)V()getNamespaceURI,-	getPrefix01getLocalName45getNodeValue7 nodeValue=
+9:;<java/lang/Stringtrim>
+9@ABequals(Ljava/lang/Object;)ZD[WS]
+"GHprintln
+JKoutputIndentationMNOgetNodeType()SQATTR:
+STU
+printlnCommon(Lorg/w3c/dom/Node;)VWCDATA:YCOMM:[	DOC_FRAG:]DOC:_	DOC_TYPE:aorg/w3c/dom/DocumentType`cdegetEntities()Lorg/w3c/dom/NamedNodeMap;ghijkorg/w3c/dom/NamedNodeMap	getLength()Igmnoitem(I)Lorg/w3c/dom/Node;qorg/w3c/dom/Entity
+stUechovELEM:xye
+getAttributes{ENT:}ENT_REF:	NOTATION:�
+PROC_INST:�TEXT:��(I)Ljava/lang/String;���
+getFirstChild()Lorg/w3c/dom/Node;���getNextSibling	�����java/lang/SystemerrLjava/io/PrintStream;�$Usage: DOMEcho [-options] <file.xml>
+���H&java/io/PrintStream� -dtd = DTD validation�F -xsd | -xsdss <file.xsd> = W3C XML Schema validation using xsi: hints�1 in instance document or schema source <file.xsd>�5 -ws = do not create element content whitespace nodes�* -co[mments] = do not create comment nodes�% -cd[ata] = put CDATA into Text nodes�- -e[ntity-ref] = create EntityReference nodes� -usage or -help = this message
+����exit(I)V�-dtd�-xsd�-xsdss
+��usage�-ws�-co
+9���
+startsWith(Ljava/lang/String;)Z�-cd�-e�-usage�-help
+�����(javax/xml/parsers/DocumentBuilderFactorynewInstance,()Ljavax/xml/parsers/DocumentBuilderFactory;
+����setNamespaceAware(Z)V
+����
+setValidating�6http://java.sun.com/xml/jaxp/properties/schemaLanguage� http://www.w3.org/2001/XMLSchema
+����setAttribute'(Ljava/lang/String;Ljava/lang/Object;)V�"java/lang/IllegalArgumentException�sError: JAXP DocumentBuilderFactory attribute not recognized: http://java.sun.com/xml/jaxp/properties/schemaLanguage�1Check to see if parser conforms to JAXP 1.2 spec.�4http://java.sun.com/xml/jaxp/properties/schemaSource�java/io/File
+��&
+����setIgnoringComments
+����#setIgnoringElementContentWhitespace
+����
+setCoalescing
+����setExpandEntityReferences
+����newDocumentBuilder%()Ljavax/xml/parsers/DocumentBuilder;�java/io/OutputStreamWriter�UTF-8
+���+(Ljava/io/OutputStream;Ljava/lang/String;)VDOMEcho$MyErrorHandler
+"(Ljava/io/Writer;Z)V
+�(Ljava/io/PrintWriter;)V
+	
+!javax/xml/parsers/DocumentBuildersetErrorHandler(Lorg/xml/sax/ErrorHandler;)V
+parse&(Ljava/io/File;)Lorg/w3c/dom/Document;/The schema alongwith the XML document is valid.	��
+outputEncoding
+ConstantValueJAXP_SCHEMA_LANGUAGEW3C_XML_SCHEMAJAXP_SCHEMA_SOURCECodeLineNumberTable
+StackMapTablemain([Ljava/lang/String;)V![Ljava/lang/String;
+Exceptions$java/lang/Exception
+SourceFileDOMEcho.javaNestMembersBootstrapMethods*
++,-.$java/lang/invoke/StringConcatFactory�(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;0
+ nodeName=""2 uri=""4 pre=""6
+ local=""8"":UNSUPPORTED NODE: InnerClassesMyErrorHandler>%java/lang/invoke/MethodHandles$Lookup@java/lang/invoke/MethodHandlesLookup!�
+���=��*
+�+��1&	(23TU��+���!+�'M,��,��!+�+M,��,�.�!+�/M,��,�2�!+�3M,�6*�6�!,�8=�?��C�!��+�3�E�!��F�J9:;<>1?5@BBICMDZFaGeHnIzK�M�P�Q�9+KM<��*�
+�!����V
+WVY	��tU#��I+�L=���@�QO>qb��s`�P�!+�R�W�V�!+�R�F�X�!+�R�5�Z�!+�R�$�\�!+�R��^�!+�R+�`�bN*Y�`�6-�f�-�l�p:�r����Y�d����u�!+�R+�w:*Y�`�6�f��l:�r����Y�d��j�z�!+�R�Y�|�!+�R�H��!+�R�7���!+�R�&���!+�R�����!+�R*Y�`�+��N-�-�r-��N���*Y�d���=`abLdUeZf]hfikjnlwm|np�q�r�t�u�v�x�y�{�|�}���}��������
+��&�1�7�=�G�J�S�X�[�d�i�l�u�z�}���������������������������5�L�$g�#��"g�"���
+��M������������������������������������������������.���� �(�0�8�@�H�L�	s�L=>:66666		���	2��?�=��	2��?�>��	2��?�	�d���>�		2:��	2��?�	6�n	2����	6�\	2����	6�J	2����	6�8*	2ö?�	���&	2Ŷ?�	���	2L	*�d����	��1+�����:		��	������%	�ֶا:
+��޶��������	��Y���	��	��	��	����	��:
+��Y�����:
+��Y�"Y���
+��Y+��
+:������Y����:
+�Y�"Y
+���r���<����	������+�0�<�A�M�V�Y�[�g�s�y����������������������������������������� �(�0�49IPW^
+m
+t��������
+ 99
+��
+ 99��C��
+ 99��R�_��
+ 99��"#%&'�(&)/)1)3)5)7)9;�<
+=?A

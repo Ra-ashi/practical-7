@@ -1,0 +1,20 @@
+����<Y
+java/lang/Object<init>()V		
+DOMEcho$MyErrorHandleroutLjava/io/PrintWriter;
+org/xml/sax/SAXParseExceptiongetSystemId()Ljava/lang/String;null
+
+getLineNumber()I
+
+getMessagemakeConcatWithConstants9(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+!"#getParseExceptionInfo3(Lorg/xml/sax/SAXParseException;)Ljava/lang/String;%&&(Ljava/lang/String;)Ljava/lang/String;
+()*+,java/io/PrintWriterprintln(Ljava/lang/String;)V%%0org/xml/sax/ErrorHandler(Ljava/io/PrintWriter;)VCodeLineNumberTable
+StackMapTable6java/lang/Stringwarning"(Lorg/xml/sax/SAXParseException;)V
+Exceptions;org/xml/sax/SAXExceptionerror
+fatalError
+SourceFileDOMEcho.javaNestHostBDOMEchoBootstrapMethodsE
+FGHI$java/lang/invoke/StringConcatFactory�(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;KURI= Line=: M
+Warning: OError: QFatal Error: InnerClassesMyErrorHandlerU%java/lang/invoke/MethodHandles$LookupWjava/lang/invoke/MethodHandlesLookup /12*
+�+��3!"	#"#2[+�
+M,�M,+�+��N-�3()	+-./04�5782.�+� �$�'�3
+569:<824+� �-M�,�'�38:<9:=824+� �.M�,�'�3>@B9:>?@ACDJDLDNDPRAS
+TVX
